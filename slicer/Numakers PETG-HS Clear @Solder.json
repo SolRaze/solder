@@ -1,0 +1,77 @@
+{
+    "type": "filament",
+    "name": "Numakers PETG-HS Clear @Solder",
+    "from": "User",
+    "inherits": "Generic PETG @System",
+    "instantiation": "true",
+    "filament_vendor": [
+        "Numakers"
+    ],
+    "filament_type": [
+        "PETG"
+    ],
+    "filament_notes": [
+        "Numakers PETG-HS Transparent. Clarity variant of Numakers PETG-HS @Solder - use only with the process preset 0.12mm Clear @Solder. Two values differ from the opaque preset and both are the point of this file. FAN IS 0% AT EVERY LAYER: fast cooling freezes the interface between extrusions before it fuses, and an unfused interface refracts. Overhangs and bridges will be poor as a direct consequence; that is the trade. Layer time is held by slow_down_layer_time 12 instead, so thin layers are stretched rather than cooled. FLOW 1.00 vs 0.95 on the opaque preset is a real +5% - it pushes material into the remaining voids and is the largest single lever on clarity. Push toward 1.05 if the part is still milky, but calibrate the extruder first: rotation_distance 34.406 is nominal, so run E_CAL_START / E_CAL_RESULT before reading a flow number as meaningful. Temperature is pinned at 250 both layers - the hotend is all-metal with PTFE cold-side only, and PETG below about 245 skips in it. Higher than 250 makes microbubbles, which is its own kind of milky. Filament must be dry; a damp spool cannot print clear at any setting."
+    ],
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "hot_plate_temp": [
+        "80"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "textured_plate_temp": [
+        "80"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "80"
+    ],
+    "fan_min_speed": [
+        "0"
+    ],
+    "fan_max_speed": [
+        "0"
+    ],
+    "overhang_fan_speed": [
+        "0"
+    ],
+    "overhang_fan_threshold": [
+        "0%"
+    ],
+    "close_fan_the_first_x_layers": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "0"
+    ],
+    "slow_down_layer_time": [
+        "12"
+    ],
+    "slow_down_min_speed": [
+        "8"
+    ],
+    "filament_max_volumetric_speed": [
+        "10"
+    ],
+    "filament_flow_ratio": [
+        "1"
+    ],
+    "filament_retraction_length": [
+        "0.9"
+    ],
+    "compatible_printers": [
+        "Solder"
+    ],
+    "version": "2.4.0.3",
+    "filament_settings_id": [
+        "Numakers PETG-HS Clear @Solder"
+    ],
+    "filament_start_gcode": [
+        "SET_PRESSURE_ADVANCE ADVANCE=0.04 ; starting point for direct drive PETG, NOT measured - run a PA tower, see calibration.md"
+    ]
+}

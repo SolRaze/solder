@@ -1,0 +1,77 @@
+{
+    "type": "filament",
+    "name": "Numakers PETG-HS @Solder",
+    "from": "User",
+    "inherits": "Generic PETG @System",
+    "instantiation": "true",
+    "filament_vendor": [
+        "Numakers"
+    ],
+    "filament_type": [
+        "PETG"
+    ],
+    "filament_notes": [
+        "Numakers PETG-HS 1.75mm, Pitch Black (x2) and Transparent (x1). Temps taken from 25 COMPLETED prints on this machine (Feb 2026, Cura 5.10.2): 250C nozzle / 80C bed / 40% fan / 30% first layer fan. Those were bowden-era with the stock hotend - the all-metal hotend may want a few degrees less. VERIFY against the spool label. Hold 250/245: bringup-log.md warns that PETG under ~245 C in this all-metal hotend skips, and this machine has a clog history, so temperature is the wrong variable to move first against stringing."
+    ],
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "250"
+    ],
+    "hot_plate_temp": [
+        "80"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "textured_plate_temp": [
+        "80"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "80"
+    ],
+    "fan_min_speed": [
+        "40"
+    ],
+    "fan_max_speed": [
+        "50"
+    ],
+    "fan_cooling_layer_time": [
+        "8"
+    ],
+    "slow_down_layer_time": [
+        "4"
+    ],
+    "slow_down_min_speed": [
+        "10"
+    ],
+    "close_fan_the_first_x_layers": [
+        "1"
+    ],
+    "overhang_fan_speed": [
+        "60"
+    ],
+    "overhang_fan_threshold": [
+        "50%"
+    ],
+    "filament_max_volumetric_speed": [
+        "10"
+    ],
+    "filament_flow_ratio": [
+        "0.95"
+    ],
+    "filament_retraction_length": [
+        "0.9"
+    ],
+    "compatible_printers": [
+        "Solder"
+    ],
+    "version": "2.4.0.3",
+    "filament_settings_id": [
+        "Numakers PETG-HS @Solder"
+    ],
+    "filament_start_gcode": [
+        "SET_PRESSURE_ADVANCE ADVANCE=0.04 ; starting point for direct drive PETG, NOT measured - run a PA tower, see machine/calibration.md"
+    ]
+}

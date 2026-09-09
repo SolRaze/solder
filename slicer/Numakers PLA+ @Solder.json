@@ -1,0 +1,59 @@
+{
+    "type": "filament",
+    "name": "Numakers PLA+ @Solder",
+    "from": "User",
+    "inherits": "Numakers PLA+ @System",
+    "instantiation": "true",
+    "version": "2.4.0.3",
+    "filament_settings_id": [
+        "Numakers PLA+ @Solder"
+    ],
+    "filament_vendor": [
+        "Numakers"
+    ],
+    "filament_type": [
+        "PLA"
+    ],
+    "filament_notes": [
+        "Numakers PLA+ Black 1kg, +/-0.03mm tolerance. Inherits Orca's own Numakers PLA+ vendor profile (225C, flow 0.99, 12mm3/s) rather than a guess. Bed 60 and a 230C first layer come from 25 completed prints on this machine (Cura, Feb 2026) - the vendor's 225C is kept for everything after layer one."
+    ],
+    "nozzle_temperature": [
+        "225"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "230"
+    ],
+    "hot_plate_temp": [
+        "60"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "60"
+    ],
+    "textured_plate_temp": [
+        "60"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "60"
+    ],
+    "fan_min_speed": [
+        "60"
+    ],
+    "fan_max_speed": [
+        "100"
+    ],
+    "close_fan_the_first_x_layers": [
+        "1"
+    ],
+    "overhang_fan_speed": [
+        "100"
+    ],
+    "filament_retraction_length": [
+        "0.6"
+    ],
+    "filament_start_gcode": [
+        "SET_PRESSURE_ADVANCE ADVANCE=0.0 ; TODO tune per material, see machine/calibration.md"
+    ],
+    "compatible_printers": [
+        "Solder"
+    ]
+}

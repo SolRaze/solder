@@ -1,0 +1,65 @@
+{
+    "type": "filament",
+    "name": "Numakers ABS @Solder",
+    "from": "User",
+    "inherits": "Generic ABS @System",
+    "instantiation": "true",
+    "version": "2.4.0.3",
+    "filament_settings_id": [
+        "Numakers ABS @Solder"
+    ],
+    "filament_vendor": [
+        "Numakers"
+    ],
+    "filament_type": [
+        "ABS"
+    ],
+    "filament_notes": [
+        "Numakers ABS Natural 1kg, unopened. WARNING: this is an OPEN-FRAME printer with no enclosure. ABS will warp, split layers on tall parts, and emit styrene fumes - ventilate. Temps are generic-ABS starting points, NOT measured on this machine; nothing here has been printed in ABS yet. Print small, print slow, no part cooling."
+    ],
+    "nozzle_temperature": [
+        "250"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "255"
+    ],
+    "hot_plate_temp": [
+        "100"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "100"
+    ],
+    "textured_plate_temp": [
+        "100"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "100"
+    ],
+    "fan_min_speed": [
+        "0"
+    ],
+    "fan_max_speed": [
+        "20"
+    ],
+    "close_fan_the_first_x_layers": [
+        "3"
+    ],
+    "overhang_fan_speed": [
+        "30"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "filament_max_volumetric_speed": [
+        "8"
+    ],
+    "filament_retraction_length": [
+        "0.6"
+    ],
+    "filament_start_gcode": [
+        "SET_PRESSURE_ADVANCE ADVANCE=0.0 ; TODO tune per material, see machine/calibration.md"
+    ],
+    "compatible_printers": [
+        "Solder"
+    ]
+}

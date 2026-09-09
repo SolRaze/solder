@@ -1,0 +1,89 @@
+{
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]",
+    "default_filament_profile": [
+        "Numakers PETG-HS @Solder"
+    ],
+    "default_print_profile": "0.20mm Standard @Solder",
+    "deretraction_speed": [
+        "35"
+    ],
+    "extruder_clearance_height_to_rod": "36",
+    "extruder_clearance_radius": "45",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "host_type": "moonraker",
+    "inherits": "Creality Ender-3 0.4 nozzle",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\nPLR_SAVE",
+    "machine_end_gcode": "END_PRINT",
+    "machine_max_acceleration_e": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_travel": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_x": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_y": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_speed_e": [
+        "25",
+        "25"
+    ],
+    "machine_max_speed_x": [
+        "200",
+        "200"
+    ],
+    "machine_max_speed_y": [
+        "200",
+        "200"
+    ],
+    "machine_max_speed_z": [
+        "5",
+        "5"
+    ],
+    "machine_pause_gcode": "PAUSE",
+    "machine_start_gcode": "START_PRINT BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]",
+    "name": "Solder",
+    "print_host": "https://solder.knave",
+    "printable_area": [
+        "0x0",
+        "235x0",
+        "235x235",
+        "0x235"
+    ],
+    "printable_height": "200",
+    "printer_agent": "moonraker",
+    "printer_extruder_id": [
+        "1"
+    ],
+    "printer_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "printer_notes": "Ender 3 frame, V4.2.7 board, Klipper on knave in Docker. Direct drive (stock extruder on X gantry), dual Z on ONE driver, all-metal V3 hotend, Satsana 5015 duct, 0.4 nozzle. Limits match printer.cfg: max_velocity 150, max_accel 500, square_corner_velocity 5, max_z_velocity 5, max_z_accel 100 - never floor these, a low max_velocity clamps the sliced 120 mm/s travels and is the main source of PETG stringing. No probe fitted - manual bed mesh only. Thumbnails 32px+400px PNG for Mainsail/Fluidd previews. No wipe bar on the bed and no wipe macros - bed_exclude_area is empty, the whole 235x235 plate is printable. Retraction 0.9 and z_hop 0.4 against PETG stringing.",
+    "printer_settings_id": "Solder",
+    "wipe_distance": [
+        "2"
+    ],
+    "retraction_length": [
+        "0.9"
+    ],
+    "retraction_speed": [
+        "35"
+    ],
+    "thumbnails": "32x32/PNG, 400x400/PNG",
+    "version": "2.3.2.75",
+    "z_hop": [
+        "0.4"
+    ],
+    "bed_exclude_area": []
+}
