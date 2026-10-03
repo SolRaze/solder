@@ -1,0 +1,66 @@
+{
+    "type": "filament",
+    "name": "Numakers ABS @Solder",
+    "from": "User",
+    "inherits": "Generic ABS @System",
+    "instantiation": "true",
+    "version": "2.4.0.3",
+    "filament_settings_id": [
+        "Numakers ABS @Solder"
+    ],
+    "filament_vendor": [
+        "Numakers"
+    ],
+    "filament_type": [
+        "ABS"
+    ],
+    "filament_notes": [
+        "Numakers ABS Natural 1 kg, Spoolman spool 3. WARNING: this is an OPEN-FRAME Ender 3 with no enclosure. ABS warps, splits layers on tall parts and emits styrene fumes - ventilate. Bed 100, the floor for ABS: the thermistor reads the aluminium under 4 mm of glass, so the glass face runs about 10 below the target. Bare carborundum glass does not hold ABS: use glue stick or ABS slurry, or the PEI sheet. Part cooling fully off, overhangs included. Pair with 0.20mm ABS @Solder, which carries the brim and the draft shield."
+    ],
+    "nozzle_temperature": [
+        "240"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "hot_plate_temp": [
+        "100"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "100"
+    ],
+    "textured_plate_temp": [
+        "100"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "100"
+    ],
+    "fan_min_speed": [
+        "0"
+    ],
+    "fan_max_speed": [
+        "0"
+    ],
+    "close_fan_the_first_x_layers": [
+        "3"
+    ],
+    "overhang_fan_speed": [
+        "0"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "filament_max_volumetric_speed": [
+        "8"
+    ],
+    "filament_retraction_length": [
+        "0.6"
+    ],
+    "filament_start_gcode": [
+        "SET_PRESSURE_ADVANCE ADVANCE=0.0 ; TODO tune per material, see machine/calibration.md\nSET_GCODE_OFFSET Z=-0.2 MOVE=1 ; ABS first layer squish, START_PRINT resets it to 0"
+    ],
+    "compatible_printers": [
+        "Solder",
+        "Solder LAN"
+    ]
+}
